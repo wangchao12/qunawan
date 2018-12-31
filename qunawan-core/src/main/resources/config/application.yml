@@ -1,0 +1,13 @@
+datasource:
+  user:
+    url: jdbc:mysql://localhost:3306/qunawan?characterEncoding=utf-8
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  type-aliases-package:  me.lindanpeng.qunawan.core.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
