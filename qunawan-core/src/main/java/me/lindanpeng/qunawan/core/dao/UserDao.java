@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 @Mapper
-public interface UserMapper {
+public interface UserDao {
     @Select("select * from User where id=#{id}")
     User selectOne(Long id);
 }
