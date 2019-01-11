@@ -10,12 +10,8 @@ import javax.sql.DataSource;
 
 @RestController
 public class HelloController {
-    @Autowired
-    @Qualifier("userDataSource")
-    DataSource userDataSource;
-    @RequestMapping("config")
+    @RequestMapping("hello")
     public String hello(){
-        System.out.println(((DruidDataSource)userDataSource).getUrl());
-        return "config world!";
+        return "hello world!";
     }
 }
